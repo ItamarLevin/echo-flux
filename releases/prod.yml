@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: slipperymuffin/echo
-      tag: 1.0.8
+      tag: 1.0.10
     mongodb:
       enabled: true
       # mongodb://username:password@mongodb.db:27017/echo
