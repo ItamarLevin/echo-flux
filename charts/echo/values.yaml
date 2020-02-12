@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/indigo-octagon-267011/echo
+  repository: slipperymuffin/echo
   pullPolicy: IfNotPresent
-  tag: "1.0"
+  tag: 1.0.8
 
 imagePullSecrets: []
 nameOverride: ""
