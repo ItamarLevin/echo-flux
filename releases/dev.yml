@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: slipperymuffin/echo
-      tag: dev-733c5c62eea90503139c710db77164d8c2af5a57
+      tag: dev-228278f002480971dcf4869217a65dcbc9b960d8
     mongodb:
       enabled: false
       persist: false
