@@ -48,10 +48,10 @@ ingress:
   hosts:
     - host: hotwings94.chickenkiller.com
       paths: [/]
-  tls:
-    - secretName: echo-tls
-      hosts:
-        - hotwings94.chickenkiller.com
+  #tls:
+  #  - secretName: echo-tls
+  #    hosts:
+  #      - hotwings94.chickenkiller.com
 
 resources: 
   # We usually recommend not to specify default resources and to leave this as a conscious
