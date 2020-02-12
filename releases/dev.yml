@@ -1,0 +1,22 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echo-dev
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:dev-*
+spec:
+  releaseName: echo-dev
+  chart:
+    git: git@github.com:ItamarLevin/echo-flux
+    path: charts/echo
+    ref: master
+  values:
+    image:
+      repository: slipperymuffin/echo
+      tag: dev-733c5c62eea90503139c710db77164d8c2af5a57
+    mongodb:
+      enabled: false
+      persist: false
