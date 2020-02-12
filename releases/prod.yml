@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: slipperymuffin/echo
-      tag: 1.0.10
+      tag: 1.0.11
     mongodb:
       enabled: true
       # mongodb://username:password@mongodb.db:27017/echo
@@ -32,9 +32,9 @@ spec:
         kubernetes.io/ingress.class: "nginx"
 
       hosts:
-        - host: prod-hotwings.chickenkiller.com
-          paths: [/]
+      - host: prod-hotwings.chickenkiller.com
+        paths: [/]
       tls:
-        - secretName: prod-echo-tls
-          hosts:
-            - prod-hotwings.chickenkiller.com
+      - secretName: prod-echo-tls
+        hosts:
+        - prod-hotwings.chickenkiller.com
