@@ -36,7 +36,7 @@ spec:
         {{- range .paths }}
         - path: {{ . }}
           backend:
-            serviceName: "{{ $fullName }}.staging"
+            serviceName: {{ $fullName }}
             servicePort: {{ $svcPort }}
         {{- end }}
   {{- end }}
