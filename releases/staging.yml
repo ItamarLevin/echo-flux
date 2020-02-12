@@ -23,3 +23,8 @@ spec:
       url: bW9uZ29kYjovL3VzZXJuYW1lOnBhc3N3b3JkQG1vbmdvZGIuZGI6MjcwMTcvZWNoby1zdGFnaW5n
       persist: true
       dbname: echo-staging
+    ingress:
+      enabled: true
+      hosts:
+      - host: hotwings94.chickenkiller.com
+        paths: [/]
