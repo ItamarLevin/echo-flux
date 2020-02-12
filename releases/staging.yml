@@ -1,0 +1,25 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echo-staging
+  namespace: staging
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:staging-*
+spec:
+  releaseName: echo-staging
+  chart:
+    git: git@github.com:ItamarLevin/echo-flux
+    path: charts/echo
+    ref: master
+  values:
+    image:
+      repository: slipperymuffin/echo
+      tag: 1.0.10
+    mongodb:
+      enabled: true
+      # mongodb://username:password@mongodb.db:27017/echo-staging
+      url: bW9uZ29kYjovL3VzZXJuYW1lOnBhc3N3b3JkQG1vbmdvZGIuZGI6MjcwMTcvZWNoby1zdGFnaW5n
+      persist: true
+      dbname: echo-staging
