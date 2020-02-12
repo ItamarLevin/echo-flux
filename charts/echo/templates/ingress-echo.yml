@@ -8,7 +8,6 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
-  namespace: nginx-ingress
   name: {{ $fullName }}
   labels:
     {{- include "echochart.labels" . | nindent 4 }}
