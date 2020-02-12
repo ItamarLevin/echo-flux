@@ -24,7 +24,7 @@ spec:
       persist: true
       dbname: echo-staging
     ingress:
-      enabled: true
+      enabled: false
       annotations:
         #nginx.ingress.kubernetes.io/rewrite-target: /
         nginx.org/proxy-connect-timeout: "900s"
