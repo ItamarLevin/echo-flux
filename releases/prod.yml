@@ -34,3 +34,7 @@ spec:
       hosts:
         - host: prod-hotwings.chickenkiller.com
           paths: [/]
+      tls:
+        - secretName: prod-echo-tls
+          hosts:
+            - prod-hotwings.chickenkiller.com

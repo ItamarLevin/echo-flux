@@ -31,3 +31,7 @@ spec:
       hosts:
         - host: dev-hotwings.chickenkiller.com
           paths: [/]
+      tls:
+        - secretName: dev-echo-tls
+          hosts:
+            - dev-hotwings.chickenkiller.com
