@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: slipperymuffin/echo
-      tag: 1.0.10
+      tag: staging-25b0de1adf33893e7dbf997db138ae6a3d95e3af
     mongodb:
       enabled: true
       # mongodb://username:password@mongodb.db:27017/echo-staging
